@@ -7,7 +7,7 @@ syntax:for (data_type  variable_name : container_type) {
 
      operations using variable_name
      }
-Used to iterate over the elements of a containers (array, vectors etc) quickly without performing initialization, testing and increment/decrement. 
+Used to iterate over elements of a containers (array, vectors etc) quickly without performing initialization, testing and increment/decrement. 
 The working of foreach loops is to do something for every element rather than doing something n times
 
 */
