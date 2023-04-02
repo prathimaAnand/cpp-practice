@@ -1,3 +1,18 @@
+//link:
+
+/*
+Concept:
+using foreach loop in c++
+syntax:for (data_type  variable_name : container_type) {
+
+     operations using variable_name
+     }
+Used to iterate over the elements of a containers (array, vectors etc) quickly without performing initialization, testing and increment/decrement. 
+The working of foreach loops is to do something for every element rather than doing something n times
+
+*/
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -23,7 +38,7 @@ int simpleArraySum(vector<int> ar) {
   // for(i=0;i<lenOfArr;i++){
     
   // }
-  for(int& i : ar) sum += i;
+  for(int& i : ar) sum += i; // for each loop
   return sum;
 }
 
