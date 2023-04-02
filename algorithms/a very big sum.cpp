@@ -1,3 +1,5 @@
+//concept: foreach loop
+
 #include <bits/stdc++.h>
 
 using namespace std;
