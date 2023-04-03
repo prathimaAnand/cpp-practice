@@ -11,9 +11,9 @@ string rtrim(const string &);
  * The function accepts INTEGER n as parameter.
  */
 
-void staircase(int n) {
+void staircase(int n) { 
   for(int i =1; i<=n; i++)
-    cout<< setw(n) << right << string(i,'#') << endl;
+    cout<< setw(n) << right << string(i,'#') << endl; // string() to print, setw() for setting the width, right - to start printing right
 }
 
 int main()
