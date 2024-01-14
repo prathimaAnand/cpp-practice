@@ -11,6 +11,7 @@ int main() {
     int n;
     vector<int> v;
     cin>>n;
+    
     for(int i=0; i<n ; i++){
         int ele;
         cin>>ele;
@@ -18,9 +19,13 @@ int main() {
     }
     int pos;
     int range_start, range_end;
-    cin>>pos;
-    cin>>range_start>>range_end;
-    v.erase(v.begin()-pos);
-    
+    cin>>pos>>range_start>>range_end;
+    v.erase(v.begin()+ (pos - 1));
+    v.erase(v.begin()+ (range_start - 1), v.begin() + (range_end - 1));
+    //printing results
+    cout<<v.size()<<endl;
+    for(int j = 0; j<v.size(); j++){
+        cout<<v[j]<<" ";
+    }
     return 0;
 }
