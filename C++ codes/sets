@@ -1,0 +1,41 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <set>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int no_of_q, q_type, num;
+    set<int> s;
+    cin>>no_of_q;
+    // getting new queries
+    while(q_type--){
+        cin>>q_type>>num;
+        if(q_type == 1){
+            s.insert(num);
+            // cout<<"inserted";
+            // for (auto it = s.begin(); it != s.end(); ++it){
+            // cout << ' ' << *it;
+        }
+        else if(q_type == 2){
+            set<int>::iterator itr=s.find(num);
+            if(itr != s.end())  
+                s.erase(itr);
+        }
+        else if(q_type == 3){
+            set<int>::iterator itr=s.find(num);
+            if(itr != s.end())
+                cout<<"Yes"<<endl;
+            else
+                cout<<"No"<<endl;
+        }
+    }
+    return 0;
+}
+
+
+
