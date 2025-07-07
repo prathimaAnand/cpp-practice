@@ -12,7 +12,6 @@ class student{
             std::cin >> scores[i];
         }
     }
-    }
     int calculateTotalScore(){
         int sum = 0;
         for(int i=0;i<5;++i){
@@ -23,12 +22,22 @@ class student{
 };
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    student S;
-    int num;
-    int s1, s2, s3, s4, s5;
+    int num; // number of students
     std::cin>> num ;
-    std::cin >> s1 >> s2 >> s3 >> s4 >> s5 ;
+    std::vector<student> S(num); // all students
     
-    std:: cout << S.calculateTotalScore();
+    for(int j = 0; j < num; ++j){
+        S[j].input();
+    }
+    int kristen_score = S[0].calculateTotalScore();
+    
+    // check if num of students who scored greater than kristen
+    int count = 0;
+    for(int k = 1; k < num; ++k){
+        if(S[k].calculateTotalScore() > kristen_score)
+        count += 1;
+    }
+
+    std::cout << count << std::endl;
     return 0;
 }
