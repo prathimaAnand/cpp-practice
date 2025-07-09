@@ -1,5 +1,6 @@
 # C++ practice
 
-Basics of C++ and Python
-Solving hackerrank questions
-Practing OPPS concepts in C++
+1. Basics of C++ and Python
+2. Solving hackerrank questions
+3. Practing OPPS concepts in C++ 
+
